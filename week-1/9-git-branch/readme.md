@@ -90,7 +90,7 @@ You can now switch between all three branches: `master`, `green_links`, and `red
 To complete this exercise, you will need to push both branches. Normally, you would switch to the branch and push like this:
 
 ```
-git checkout red_links
+git checkout red_links 
 git push
 ```
 
