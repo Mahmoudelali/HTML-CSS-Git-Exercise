@@ -42,7 +42,7 @@
               <legend>Billing Address</legend>
               <p>
                 <label for="billing-address-1">Address Line 1</label>
-                <input type="text" name="billing-address-1" id="billing-address-1" />
+                <input type="text" name="billing-address-1" required id="billing-address-1" />
               </p>
               <p>
                 <label for="billing-address-2">Address Line 2</label>
@@ -53,7 +53,7 @@
                 <input type="text" name="billing-postcode" id="billing-postcode" />
               </p>
               <p>
-                <label for="billing-city">City</label>
+                <label for="billing-city" required>City</label>
                 <input type="text" name="billing-city" id="billing-city" />
               </p>
             </fieldset>
@@ -80,13 +80,15 @@
                 <input type="text" name="delivery-address-city" id="delivery-address-city" />
               </p>
               <p>
-                <label for="delivery-country">Country</label>
+                <label for="delivery-country" value="United Kingdom" readonly>Country</label>
                 <input type="text" name="delivery-country" id="delivery-country" />
               </p>
               <fieldset>
                 <legend>Delivery Options</legend>
                 <label>
                   <input
+                  checked
+                  disabled
                     type="radio"
                     name="delivery-option"
                     id="delivery-option"
